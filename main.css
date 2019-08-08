@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-image: url(img/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+nav ul {
+    margin:0;
+   
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li img {
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+}
+
+nav ul li:last-of-type {
+    margin-right: 0;
+}
+
+#contacto-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px 10px;
+    background-color: rgba(219, 35, 142, 0.4);
+    padding: 10px;
+    color: white;
+}
+
+#contacto-social div {
+    margin-left: 20px;
+    margin-right:20px;
+}
+
+#contacto-social a {
+    text-decoration: none;
+    color:white;
+}
+
+#contacto-social a:hover {
+    color: purple;
+}
+
+#cabecera {
+    border-bottom: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    background-color: rgba(219, 35, 142, 0.4);
+    color: white;
+}
+
+#cabecera a {
+    text-decoration: none;
+    color:white;
+}
+
+#cabecera a:hover {
+    color: purple;
+}
+
+#cabecera h1{
+    margin-top: 0;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    flex-grow: 1;
+}
+
+#proyectos {
+    width: 800px;
+    min-height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.columna-proyectos {
+    flex-basis: 30%;
+}
+
+.proyecto {
+    border: 1px solid white;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.proyecto img {
+    width: 100%;
+    height: auto;
+}
+
+.proyecto h2 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: palevioletred;
+    color: white;
+    margin: 0;
+    font-size: 16px;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.proyecto h2:hover {
+    color: purple;
+}
+
+aside {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    flex-basis: 30%;
+    border-radius: 5px;
+}
+
+aside img {
+    width: 100%;
+    height: auto;
+}
+
+aside p {
+    color: palevioletred;
+}
+
+#pie{
+    border-top: 1px solid white;
+    padding: 10px;
+    text-align: center;
+    background-color:  rgba(62, 226, 149, 0.4);
+}
+
+#pie a {
+    text-decoration: none;
+    color:white;
+}
+
+#pie a:hover {
+    color: rgba(14, 88, 42, 0.753);
+}
+
+@media (max-width: 768px) {
+    #proyectos {
+        flex-wrap: wrap;
+    }
+    .columna-proyectos, aside {
+        flex-basis: 80%;
+    }
+
+    aside {
+        order: -1;
+    }
+}
+
+
+
+
